@@ -11,7 +11,7 @@ $.ajaxPrefilter(function (options) {
             Authorization: localStorage.getItem('token') || ''
         }
 
-        // 全局统一挂载 complete 回调函数
+        // 全局统一挂载 complete 回调函数 不管成功还是失败都会触发的回调函数
         options.complete = function (res) {
             // console.log('执行了 complete 回调：')
             // console.log(res)
